@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Instagram</title>
+        <style>
+            .zoho{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                width: 100%;
+                display: flex;
+            }
+            header .profile-pto{
+                width: 20%;
+            }
+            img{
+                width: 150px;
+                margin:30px; 
+                float: left;
+                border:1px solid lightgray;
+                border-radius: 50%;
+            }
+            header .profile-name{
+                width: 80%;
+                margin: 20px;
+            }
+            header p{
+                font-size:20px;
+                display: inline;
+                margin: 5px 50px 0px 10px;
+                position: relative;
+            }
+            header button{
+                background-color: #EBEDF0;
+                padding: 10px;
+                border: 1px solid #EBEDF0;
+                border-radius: 10px;
+                text-align: center;
+                margin: 4px 2px;
+                font-weight:bold;
+            }
+            button:hover{
+                background-color: lightgray;
+                cursor: pointer;
+            }
+            header a{
+                display: inline-block;
+                font-size: 15px;
+                text-decoration: none;
+                font-weight:bold;
+                padding: 10px;
+                color: black;
+            }
+            a:hover{
+                color: lightgray;
+            }
+            nav{
+                width: 100%;
+            }
+            nav .highlights{
+                width:100%;
+                display: flex;
+            }
+            .highlights img{
+                border: 2px solid lightgray;
+                border: 50%;
+                width: 100px;
+            }
+            .main{
+                width: 100%;
+                margin: 0;
+            }
+            .main .page{
+                margin: 2% 30% 2% 30%;
+            }
+            .main a{
+                margin: 30px;
+                text-decoration: none;
+                font-size: 15px;
+                color: black;
+                font-weight: bold;
+            }
+            .main a:hover{
+                text-decoration: underline;
+            }
+            #post{
+                width:100%;
+                height:50%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+            }
+            #post img{
+                width: 250px;
+                height: 250px;
+                margin: 5px;
+                border:1px solid lightgrey;
+                border-radius:0px;
+                object-fit: cover;
+            }
+            img:hover{
+                cursor: pointer;
+            }
+            footer{
+                width: 100%;
+                border:1px solid rgb(228, 220, 220);
+                margin: 0;
+            }
+            footer p{
+                float: left;
+                color:rgb(100, 97, 97);
+                font-size: 15px;
+                font-weight: bold;
+                margin:0;
+            }
+            footer h6{
+                float: right;
+                color: rgb(59, 187, 238);
+                font-size: 15px;
+                font-weight: bold;
+                margin:0;
+            }
+            footer .suggestion{
+                margin:0;
+                width: 100%;
+                display: inline-block;
+            }
+            .suggestion #content{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin: 3px;
+            }
+            #content img{
+                position: absolute;
+                margin: 0;
+                left: 60px;
+                top: 20px;
+                height:70px;
+                width: 70px;
+                border: 1px solid lightgrey;
+                border-radius:50%;
+            }
+            #content a{
+                position: absolute;
+                left: 60px;
+                top:100px;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            #content p{
+                position: absolute;
+                left: 70px;
+                top:120px;
+                font-size: 15px;
+                font-weight:200;
+            }
+            #content button{
+                position: absolute;
+                left: 50px;
+                top:150px;
+                background-color: #EBEDF0;
+                width: 90px;
+                padding: 10px;
+                border: 1px solid #EBEDF0;
+                border-radius: 10px;
+                text-align: center;
+                margin: 4px 2px;
+                font-weight:bold;
+            }
+            button:hover{
+                background-color: lightgray;
+                cursor: pointer;
+            }
+            #content2{
+                width: 200px;
+                height:200px;
+                position: absolute;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin:3px;
+                left: 105%;
+                bottom: 1px;
+            }
+            #content3{
+                width: 200px;
+                height:200px;
+                position: absolute;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin:3px;
+                left: 213%;
+                bottom: 1px;
+            }
+            #content4{
+                width: 200px;
+                height:200px;
+                position: absolute;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin:3px;
+                left: 320%;
+                bottom: 1px;
+            }
+            #content5{
+                width: 200px;
+                height:200px;
+                position: absolute;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin:3px;
+                left: 428%;
+                bottom: 1px;
+            }
+            #content6{
+                width: 200px;
+                height:200px;
+                position: absolute;
+                border: 1px solid rgb(228, 220, 220);
+                border-radius: 10px;
+                margin:3px;
+                left: 535%;
+                bottom: 1px;
+            }
+        </style>   
+    </head>
+    <body>
+        <div class="zoho">
+        <header>
+        <div class="profile-pto">
+        <img src="c:\swetha full stack\insta\zoho-logo.png" alt="zoho logo">
+        </div>
+        <div class="profile-name">
+            <p>Zoho</p>
+            <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:5px;left:23%;">
+            <button>Follow</button>
+            <button>Message</button><br>
+            <a href="">1,157 posts</a>
+            <a href="">83.4k followers</a>
+            <a href="">38 following</a><br><br>
+            <p>Zoho</p><br>
+            <button>@ 6,431,982</button><br>
+            A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes; built by a company that values your privacy.
+            <a href="">zoho.to/LatestLinks</a>
+        </div>
+        </header>
+        <nav>
+            <div class="highlights">
+            <a href="">
+            <img src="C:\swetha full stack\insta\recognition.jpg" alt="recognition"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\our values.jpg" alt="ourvalues"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\data privacy.jpg" alt="data privacy"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\bizbasics.jpg" alt="bizbasics"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\quiz.jpg" alt="quiz"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\25 years.jpg" alt="25 years"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\zoho on zoho.jpg" alt="zoho on zoho"></a>
+            <a href="">
+            <img src="C:\swetha full stack\insta\nextstopzoho.jpg" alt="nextstopzoho"></a>
+            </div><hr>
+        </nav>
+        <div class="main">
+            <div class="page">
+            <a href="">POSTS</a>
+            <a href="">REELS</a>
+            <a href="">GUIDES</a>
+            <a href="">TAGGED</a>
+            </div>
+            <div id="post">
+                <img src="C:\swetha full stack\insta\post1.jfif" alt="post1">
+                <img src="C:\swetha full stack\insta\post2.jfif" alt="post2">
+                <img src="C:\swetha full stack\insta\post3.jpg" alt="post3">
+                <img src="C:\swetha full stack\insta\post4.jfif" alt="post4">
+                <img src="C:\swetha full stack\insta\post5.jfif" alt="post5">
+                <img src="C:\swetha full stack\insta\post6.jfif" alt="post6">
+                <img src="C:\swetha full stack\insta\post7.jpg" alt="post7">
+                <img src="C:\swetha full stack\insta\post8.jfif" alt="post8">
+                <img src="C:\swetha full stack\insta\post9.png" alt="post9">
+                <img src="C:\swetha full stack\insta\post--10.png" alt="post10">
+                <img src="C:\swetha full stack\insta\post11.jfif" alt="post11">
+                <img src="C:\swetha full stack\insta\post12.jfif" alt="post12">
+                <img src="C:\swetha full stack\insta\post13.jpg" alt="post13">
+                <img src="C:\swetha full stack\insta\post14.png" alt="post14">
+                <img src="C:\swetha full stack\insta\post15.jfif" alt="post15">
+            </div>
+        </div>
+        <footer>
+            <p>Related accounts</p>
+            <h6>See all</h6>
+            <div class="suggestion">
+            <div id="content">
+                <img src="C:\swetha full stack\insta\sug1.png" alt="sug1">
+                <a href="">Udacity</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:56%;">
+                <p>Udacity</p>
+                <button>Follow</button>
+                <div id="content2">
+                <img src="C:\swetha full stack\insta\sug2.jfif" alt="sug2">
+                <a href="">tipalti</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:56%;">
+                <p>Tipalti</p>
+                <button>Follow</button>
+                </div>
+                <div id="content3">
+                <img src="C:\swetha full stack\insta\sug3.jpg" alt="sug3">
+                <a href="">Scoutible</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:63%;">
+                <p>Scoutible</p>
+                <button>Follow</button>
+                </div>
+                <div id="content4">
+                <img src="C:\swetha full stack\insta\sug4.png" alt="sug4">
+                <a href="">Syncfusion</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:68%;">
+                <p>Syncfusion</p>
+                <button>Follow</button>
+                </div>
+                <div id="content5">
+                <img src="C:\swetha full stack\insta\sug5.png" alt="sug5">
+                <a href="">Zoho.latam</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:69%;">
+                <p>Zoho.latam</p>
+                <button>Follow</button>
+                </div>
+                <div id="content6">
+                <img src="C:\swetha full stack\insta\sug6.png" alt="sug6">
+                <a href="">ZohoCRM</a>
+                <img src="C:\swetha full stack\insta\insta logo.jpg" alt="verify simple" style="width:30px;height:30px;border:none;position:absolute;top:95px;left:68%;">
+                <p>ZohoCRM</p>
+                <button>Follow</button>
+                </div>
+            </div>  
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
